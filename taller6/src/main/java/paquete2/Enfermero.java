@@ -1,26 +1,18 @@
-/*
+ /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package entidades;
+package paquete2;
 
 /**
  *
- * @author bitxanax
+ * @author micha
  */
 public class Enfermero {
 
     private String nombre, tipoNombramiento;
     private double sueldoMensual;
-
-    public String getNombre() {
-        return nombre;
-    }
-
-    public void setNombre(String nombre) {
-        this.nombre = nombre;
-    }
 
     public Enfermero(String nombre, String tipoNombramiento, double sueldoMensual) {
         this.nombre = nombre;
@@ -28,25 +20,34 @@ public class Enfermero {
         this.sueldoMensual = sueldoMensual;
     }
 
-    public String getTipoNombramiento() {
+    public void establecerNombre(String nom) {
+        nombre = nom;
+    }
+
+    public void establecerTipoNombramiento(String tipoNombra) {
+       tipoNombramiento = tipoNombra;
+    }
+
+    public void estabelcerSueldoMensual(double sueldoMen) {
+        sueldoMensual = sueldoMen;
+    }
+
+    public String obtenerNombre() {
+        return nombre;
+    }
+
+    public String obtenerTipoNombramiento() {
         return tipoNombramiento;
     }
 
-    public void setTipoNombramiento(String tipoNombramiento) {
-        this.tipoNombramiento = tipoNombramiento;
-    }
-
-    public double getSueldoMensual() {
+    public double obtenerSueldoMensual() {
         return sueldoMensual;
     }
 
-    public void setSueldoMensual(double sueldoMensual) {
-        this.sueldoMensual = sueldoMensual;
-    }
+    @Override
 
     public String toString() {
         return " - " + nombre + " - nombramiento: " + tipoNombramiento
                 + " - sueldo: " + sueldoMensual + "\n";
     }
-
 }

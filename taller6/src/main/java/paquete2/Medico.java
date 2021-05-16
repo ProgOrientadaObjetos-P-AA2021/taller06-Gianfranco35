@@ -3,14 +3,14 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package entidades;
+package paquete2;
 
 /**
  *
- * @author bitxanax
+ * @author micha
  */
 public class Medico {
-
+    
     private String nombre, especialidad;
     private double sueldoMensual;
 
@@ -20,28 +20,28 @@ public class Medico {
         this.sueldoMensual = sueldoMensual;
     }
 
-    public String getNombre() {
+    public void establecerNombre(String nom) {
+        nombre = nom;
+    }
+
+    public void estabelcerEspecialidad(String especi) {
+        especialidad = especi;
+    }
+
+    public void estabelcerSueldoMensual(double sueldoMen) {
+        sueldoMensual = sueldoMen;
+    }
+
+    public String obtenerNombre() {
         return nombre;
     }
 
-    public void setNombre(String nombre) {
-        this.nombre = nombre;
-    }
-
-    public String getEspecialidad() {
+    public String obtenerEspecialidad() {
         return especialidad;
     }
 
-    public void setEspecialidad(String especialidad) {
-        this.especialidad = especialidad;
-    }
-
-    public double getSueldoMensual() {
+    public double obtenerSueldoMensual() {
         return sueldoMensual;
-    }
-
-    public void setSueldoMensual(double sueldoMensual) {
-        this.sueldoMensual = sueldoMensual;
     }
 
     @Override
@@ -49,5 +49,4 @@ public class Medico {
         return " - " + nombre + " - especialidad: " + especialidad
                 + " - sueldo: " + sueldoMensual + "\n";
     }
-
 }

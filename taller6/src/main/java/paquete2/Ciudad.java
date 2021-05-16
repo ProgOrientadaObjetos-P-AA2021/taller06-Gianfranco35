@@ -3,11 +3,11 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package entidades;
+package paquete2;
 
 /**
  *
- * @author bitxanax
+ * @author micha
  */
 public class Ciudad {
 
@@ -18,21 +18,20 @@ public class Ciudad {
         this.provinciaNombre = provinciaNombre;
     }
 
-    
-    public String getNombre() {
+    public void establecerNombre(String nom) {
+        nombre = nom;
+    }
+
+    public void estabelcerProvinciaNombre(String provinciaNom) {
+        provinciaNombre = provinciaNom;
+    }
+
+    public String obtenerNombre() {
         return nombre;
     }
 
-    public void setNombre(String nombre) {
-        this.nombre = nombre;
-    }
-
-    public String getProvinciaNombre() {
+    public String obtenerProvinciaNombre() {
         return provinciaNombre;
-    }
-
-    public void setProvinciaNombre(String provinciaNombre) {
-        this.provinciaNombre = provinciaNombre;
     }
 
 }
